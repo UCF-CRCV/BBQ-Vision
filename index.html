@@ -3,7 +3,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<meta property='og:title' content='SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models'/>
+<meta property='og:title' content='BBQ-V: Benchmarking Visual Stereotype Bias in Large Multimodal Models'/>
 <meta property='og:image' content=''/>
 <meta property='og:description' content=''/>
 <meta property='og:url' content='https://github.com/UCF-CRCV/SB-Bench'/>
@@ -23,10 +23,10 @@
 </script>
   <meta charset="utf-8">
   <meta name="description"
-        content="SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models">
-  <meta name="keywords" content="Stereotype-Bias Benchmark">
+        content="BBQ-V: Benchmarking Visual Stereotype Bias in Large Multimodal Models">
+  <meta name="keywords" content="Stereotype-Bias Benchmark, BBQ-V, Visual Bias, Large Multimodal Models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models</title>
+  <title>BBQ-V: Benchmarking Visual Stereotype Bias in Large Multimodal Models</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./static/images/icon.png">
 
 
@@ -66,27 +66,18 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models</h1>
+          <h1 class="title is-2 publication-title">BBQ-V: Benchmarking Visual Stereotype Bias in Large Multimodal Models</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="https://www.linkedin.com/in/vishalnarnaware/">Vishal Narnaware</a><sup>1<b style="font-size: 20px;">*</b></sup>,</span>
-            <span class="author-block"><a href="https://ashmalvayani.github.io/">Ashmal Vayani</a><sup>1<b style="font-size: 20px;">*</b></sup>,</span>
-            <span class="author-block"><a href="https://www.rohitg.xyz/">Rohit Gupta</a><sup>1♠</sup>,</span>
-            <span class="author-block"><a href="https://swetha5.github.io/">Swetha Sirnam</a><sup>1♠</sup>,</span>    
-            <span class="author-block"><a href="https://scholar.google.com/citations?user=p8gsO3gAAAAJ&hl=en&oi=ao">Mubarak Shah</a><sup>1</sup></span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><b style="font-size: 20px;">*</b> Equally contributing first authors,</span>
-            <span class="author-block"><sup>♠</sup> Equally contributing second authors</span>
+            <span class="author-block">Anonymous ECCV 2026 Submission</span>
             <br>
-            <span class="author-block"><sup>1</sup>University of Central Florida</span>
+            <span class="author-block">Paper ID #14914</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://www.arxiv.org/abs/2502.08779" target="_blank"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -96,7 +87,7 @@
               </span>
             </span>
                 <span class="link-block">
-                  <a href="https://huggingface.co/datasets/ucf-crcv/SB-Bench" target="_blank"
+                  <a href="#"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
@@ -105,7 +96,7 @@
                   </a>
                 </span>
               <span class="link-block">
-                <a href="https://github.com/UCF-CRCV/SB-Bench" target="_blank"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -124,6 +115,7 @@
                 </a>
               </span>
             </div>
+            <p class="is-size-7" style="margin-top: 0.75rem; color: #888;">Dataset and evaluation code will be released publicly upon acceptance. Links above are placeholders.</p>
           </div>
         </div>
       </div>
@@ -134,8 +126,8 @@
   <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <p align="justify"> 
-          Motivated by advancements in vision-language tasks by Large Multimodal Models (LMMs) and their limitations in understanding and generating unbiased responses, we present the Stereotype-Bias Benchmark <b><i>(SB-bench)</i></b>. This benchmark enables researchers to conduct more effective bias assessments, ultimately contributing to improved stereotype debiasing in AI models. By addressing the limitations of previous benchmarks, SB-Bench paves the way for fairer and more inclusive LMMs, ensuring that these powerful AI systems serve diverse communities equitably. </p>
+        <p align="justify">
+          Motivated by advancements in vision-language tasks by Large Multimodal Models (LMMs) and their limitations in producing unbiased responses, we present <b><i>BBQ-V</i></b> (BBQ-Vision), a multimodal extension of the BBQ dataset for assessing visual stereotype bias. Unlike prior benchmarks that lack diversity, rely on synthetic images, or use single-actor images, <b><i>BBQ-V</i></b> uses real-world, multi-actor images paired with deliberately ambiguous contexts and bias-probing questions. This enables more effective bias assessment, ultimately contributing to fairer and more inclusive LMMs that serve diverse communities equitably. </p>
         <!-- <br> -->
 
     <div class="column">
@@ -143,9 +135,9 @@
             <!-- <h4 class="subtitle has-text-centered"> -->
             <img src="./static/images/piechart.png", width="500">
             <!-- </h4> -->
-            
+
             <div class="content has-text-justified">
-                <p align="justify"> <b> <span>Figure</span></b>: <b> <span style="color: blue;">(Left)</span></b> The benchmark includes nine diverse domains and 54 sub-domains to rigorously assess the performance of LMMs in visually grounded stereotypical scenarios. <b><i>SB-bench</i></b> comprises over 14.5k image-question pairs on carefully curated non-synthetic images.</p>
+                <p align="justify"> <b> <span>Figure</span></b>: The <b><i>BBQ-V</i></b> benchmark spans nine diverse domains and 50 sub-domains to rigorously assess LMMs in visually grounded stereotypical scenarios. <b><i>BBQ-V</i></b> comprises over 14.1k carefully curated real-world, multi-actor image-question pairs built on 4,497 non-synthetic images.</p>
             </div>
         </div>
     </div>
@@ -163,7 +155,7 @@
       <h2 class="title is-3">Abstract</h2>
       <div class="content has-text-justified">
         <p>
-            Stereotype biases in Large Multimodal Models (LMMs) perpetuate harmful societal prejudices, undermining the fairness and equity of AI applications. As LMMs grow increasingly influential, addressing and mitigating inherent biases related to stereotypes, harmful generations, and ambiguous assumptions in real-world scenarios has become essential. However, existing datasets evaluating stereotype biases in LMMs often lack diversity and rely on synthetic images, leaving a gap in bias evaluation for real-world visual contexts. To address the gap in bias evaluation using real images, we introduce the <i>Stereotype Bias Benchmark</i> (<b><i>SB-bench</i></b>), the most comprehensive framework to date for assessing stereotype biases across nine diverse categories and 54 sub-categories with non-synthetic images. <b><i>SB-bench</i></b> contains 14,578 image-question pairs and rigorously evaluates LMMs through carefully curated, visually grounded scenarios, challenging them to reason accurately about visual stereotypes. It offers a robust evaluation framework featuring real-world visual samples, image variations, and open-ended question formats. By introducing visually grounded queries that isolate visual biases from textual ones, <b><i>SB-bench</i></b> enables a precise and nuanced assessment of a model’s reasoning capabilities across varying levels of difficulty. Through rigorous testing of 16 state-of-the-art open-source and closed-source LMMs, <b><i>SB-bench</i></b> provides a systematic approach to assessing stereotype biases in LMMs across key social dimensions. We further curate and perform comparisons with synthetic images to highlight the distribution shift when evaluated against real-world visual samples. This benchmark represents a significant step toward fostering fairness in AI systems and reducing harmful biases, laying the groundwork for more equitable and socially responsible LMMs. Our code and dataset are publically available. <br>
+            Stereotype biases in Large Multimodal Models (LMMs) perpetuate harmful societal prejudices, undermining the fairness and equity of AI applications. As LMMs grow increasingly influential, addressing and mitigating inherent biases related to stereotypes, harmful generations, and ambiguous assumptions in real-world scenarios has become essential. However, existing datasets evaluating stereotype biases in LMMs often lack diversity, rely on synthetic images, and frequently use single-actor images, leaving a gap in bias evaluation for real-world visual contexts. To address this gap, we introduce <b><i>BBQ-Vision</i></b> (<b><i>BBQ-V</i></b>), the most comprehensive framework for assessing stereotype biases across nine diverse categories and 50 sub-categories with real and multi-actor images. <b><i>BBQ-V</i></b> contains 14,144 image-question pairs and rigorously evaluates LMMs through carefully curated, visually grounded scenarios, challenging them to reason accurately about visual stereotypes. It offers a robust evaluation framework featuring real-world visual samples, image variations, and open-ended question formats, enabling a precise and nuanced assessment of a model’s reasoning across varying levels of difficulty. Through rigorous testing of 19 state-of-the-art open-source (general-purpose and reasoning) and closed-source LMMs, we show that top-performing models remain biased on several social stereotypes, and we demonstrate that "thinking" models induce <i>more</i> bias in their reasoning chains. This benchmark represents a significant step toward fostering fairness in AI systems and reducing harmful biases, laying the groundwork for more equitable and socially responsible LMMs. Our dataset and evaluation code will be released publicly. <br>
         </p>
       </div>
     </div>
@@ -180,15 +172,15 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3"><i>SB-Bench</i> provides a more rigorous and standardized evaluation framework for next-generation multilingual LMMs.</h2>
+        <h2 class="title is-3"><i>BBQ-V</i> provides a more rigorous and standardized framework for evaluating visual stereotype bias in next-generation LMMs.</h2>
         <div class="content has-text-justified">
           <p>
           <h5> <b> Main contributions: </b></h5>
            <ul>
-              <li>We introduce <b><i>SB-bench</i></b>, a diverse open-ended benchmark featuring <i>14,578</i> non-synthetic visual samples that span across nine categories and 54 sub-categories of social biases, providing a more accurate reflection of real-world contexts.</li>
-              <li><b><i>SB-bench</i></b> is meticulously designed to present visually grounded scenarios, explicitly disentangling visual biases from textual biases. This enables a focused and precise evaluation of visual stereotypes in LMMs.</li>
-              <li>We benchmark 16 state-of-the-art open- and closed-source LMMs, along with their various scale variants on <b><i>SB-bench</i></b>. Our analysis highlights critical challenges and provides actionable insights for developing more equitable and fair multimodal models.</li>
-              <li>We further compare our experimental setup against synthetic images and closed-ended evaluations, highlighting distribution shift and selection bias, respectively.</li>
+              <li>We introduce <b><i>BBQ-V</i></b>, a diverse open-ended benchmark featuring <i>14,144</i> non-synthetic visual samples spanning nine categories and 50 sub-categories of social biases, providing a more accurate reflection of real-world contexts.</li>
+              <li><b><i>BBQ-V</i></b> is meticulously designed around visually grounded scenarios, explicitly disentangling visual biases from textual biases. This enables a focused and precise evaluation of visual stereotypes in LMMs.</li>
+              <li>We benchmark 19 state-of-the-art open- and closed-source <i>general-purpose and reasoning</i> LMMs, along with their scale variants, on <b><i>BBQ-V</i></b>. Our analysis highlights critical challenges and provides actionable insights for developing more equitable multimodal models.</li>
+              <li>We further compare our setup against synthetic images and closed-ended (MCQ) evaluations, highlighting distribution shift and selection bias, respectively.</li>
             </ul>
           </p>
         </div>
@@ -200,29 +192,29 @@
 </section>
 
 <section class="section">
-  
+
     <!--/ Matting. -->
     <div class="container is-max-desktop">
-    
+
     <!-- Latent space editing applications -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">SB-Bench Dataset Overview</h2>
-        
+        <h2 class="title is-3 has-text-centered">BBQ-V Dataset Overview</h2>
+
         <div class="content has-text-centered">
             <img src="./static/images/dataset_compare.png"  style="max-width:100%">
                                   <p class="content has-text-justified">
             <b>Table:</b> <p>
-                Comparison of various LMM evaluation benchmarks with a focus on stereotypical social biases. Our proposed benchmark, <b><i>SB-bench</i></b> assesses nine social bias types and is based on non-synthetic images. The <i>Question Types</i> are classified as <code>ITM</code> (Image-Text Matching), <code>OE</code> (Open-Ended), or <code>MCQ</code> (Multiple-Choice). <i>Real Images</i> indicates whether the dataset was synthetically generated or obtained through web-scraping. <i>Image Variations</i> refers to the presence of multiple variations for a single context, while <i>Text Data Source</i> and <i>Visual Data Source</i> refer to the origins of the text and image data, respectively.
+                Comparison of various LMM evaluation benchmarks focused on stereotypical social biases. Our proposed benchmark, <b><i>BBQ-V</i></b>, assesses nine social bias types and is based on <i>real</i> images. The <i>Question Types</i> are classified as <code>ITM</code> (Image-Text Matching), <code>OE</code> (Open-Ended), or <code>MCQ</code> (Multiple-Choice). <i>Real Images</i> indicates whether the dataset was synthetically generated, <i>Image Variations</i> refers to multiple variations of a single context, and <i>Multi-Actors</i> indicates whether the images contain multiple people. Compared to the widely used non-synthetic VLStereoSet benchmark, <b><i>BBQ-V</i></b> offers 4&times; more visual images, 7&times; more evaluation questions, and 2&times; more bias domains.
           </p>
         </div>
         <div class="content has-text-justified">
                       <p>
-            <b> <span style="color: blue;">SB-Bench</span></b> comprises of nine social bias categories.
+            <b> <span style="color: blue;">BBQ-V</span></b> comprises nine social bias categories.
             <div class="content has-text-centered">
               <img src="./static/images/dataset_describe.png"  style="max-width:100%">
                                     <p class="content has-text-justified">
-              <b>Table:</b> <i>Bias Types:</i> Examples from the nine bias categories. The source which identifies the bias is reported.
+              <b>Table:</b> <i>Bias Types:</i> Examples from the nine bias categories. The source which attests the bias is reported.
             </p>
           </div>
 
@@ -246,39 +238,28 @@
 
             <div class="content has-text-justified">
                 <p align="justify"> <b> <span>Figure</span></b>:
-                <strong>SB-bench Data Curation Pipeline:</strong> Our benchmark incorporates ambiguous contexts and bias-probing questions from the BBQ [Parrish et al., 2021] dataset. The ambiguous text context is passed to a Visual Query Generator (VQG), which simplifies it into a search-friendly query to retrieve real-world images from the web. Retrieved images are filtered through a three-stage process: 
-                (1) PaddleOCR is used to eliminate text-heavy images; 
-                (2) semantic alignment is verified using CLIP, Qwen2.5-VL, and GPT-4o-mini to ensure the image matches the simplified context; and 
-                (3) synthetic and cartoon-like images are removed using GPT-4o-mini. 
-                A Visual Information Remover (VIR) anonymizes text references to prevent explicit leakage. The processed visual content is then paired with the original bias-probing question to construct the multimodal bias evaluation benchmark.
+                <strong>BBQ-V Data Curation Pipeline:</strong> Our benchmark incorporates ambiguous contexts and bias-probing questions from the BBQ [Parrish et al., 2021] dataset. The ambiguous text context is passed to a Visual Query Generator (VQG), which simplifies it into a search-friendly query to retrieve real-world images from the web. Retrieved images are filtered through a three-stage process:
+                (1) PaddleOCR eliminates text-heavy images;
+                (2) semantic alignment is verified using CLIP, Qwen2.5-VL, and GPT-4o-mini to ensure the image matches the simplified context; and
+                (3) synthetic and cartoon-like images are removed using GPT-4o-mini.
+                A Visual Information Remover (VIR) anonymizes text references to prevent explicit leakage. The processed visual content is first blurred to remove personally identifiable data (e.g., faces, watermarks) and then paired with the original bias-probing question to construct the multimodal bias evaluation benchmark.
                 </p>
             </div>
 
         <div class="content has-text-justified">
             <h3 class="title is-4 has-text-justified">Data Statistics</h3>
-    
-            <p align="justify"> Data statistics of our SB-Bench showing the nine diverse social bias categories, 54 sub-domains. Our dataset contains over 14.5K high-quality image question pairs in total. </p>
+
+            <p align="justify"> <b><i>BBQ-V</i></b> spans nine diverse social bias categories and 50 sub-domains. Starting from 5,194 ambiguous BBQ context-question pairs and an over-retrieve-then-filter strategy, the pipeline yields 4,497 high-quality real images and over 14.1K image-question pairs. The dataset is demographically balanced, with near gender parity (50.9% F / 49.1% M) and broad coverage of nationalities (50.3% American, 26.4% Asian, 11.8% MENA) and ethnic identities (24.5% Caucasian, 23.3% Hispanic, 18.4% African American, 5.9% Arab). </p>
         </div>
-
-
-        <!-- <div class="content has-text-justified">
-            <div class="content has-text-centered">
-            <img src="./static/images/category_distribution_v2.png" style="max-width:100%"> 
-            </div>
-            <p align="justified"> <b> <span>Figure</span></b>: A detailed breakdown of categories from <i>SB-Bench</i>. Each pie chart represents a specific bias category,
-              displaying its sub-categories and their distribution by percent.</p>
-        </div>
-        </div> -->
-
 
         <div class="content has-text-justified">
           <div class="content has-text-centered">
-          <img src="./static/images/failures.png" style="max-width:100%"> 
+          <img src="./static/images/failures.png" style="max-width:100%">
           </div>
-          <p align="justified"> <b> <span>Figure</span></b>: We present qualitative examples from three LMMs—GPT-4o, Phi-4-Multimodal, and Qwen2.5-VL—showcasing failure cases across various stereotype categories in <b><i>SB-bench</i></b>. Rather than responding with “cannot be determined” when faced with ambiguous or insufficient information, models often rely on stereotypical associations to make definitive choices. For instance, Qwen2.5-VL <i>(bottom-left)</i> infers that a hijab-wearing woman is against terrorism, and GPT-4o <i>(top-right)</i> assumes a woman carrying a handbag is a secretary—both reflecting bias-driven reasoning rather than grounded inference. These examples highlight how current LMMs tend to amplify or reproduce social stereotypes when interpreting vague or context-light scenarios.</p>
+          <p align="justified"> <b> <span>Figure</span></b>: We present qualitative failure cases across stereotype categories in <b><i>BBQ-V</i></b> from proprietary, open-source, and thinking models. Rather than refusing to answer when faced with ambiguous or insufficient information, models often rely on stereotypical associations to make definitive choices. For instance, models infer household responsibility based on traditional attire, or assume that a secretary is "often female"&mdash;both reflecting bias-driven reasoning rather than grounded inference. These examples highlight how current LMMs tend to amplify or reproduce social stereotypes when interpreting vague or context-light scenarios.</p>
       </div>
       </div>
-          
+
       </div>
     </div>
 
@@ -286,24 +267,25 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width has-text-centered">
-        <h2 class="title is-3">Experimental results on SB-Bench</h2>
+        <h2 class="title is-3">Experimental results on BBQ-V</h2>
 
-        <!-- <div class="content has-text-justified">
+                <h3 class="title is-4 has-text-justified">Evaluation Framework</h3>
+
+        <div class="content has-text-justified">
         <p>
-          We present qualitative examples from three LMMs—GPT-4o, Phi-4-Multimodal, and Qwen2.5-VL—showcasing failure cases across various stereotype categories in <b><i>SB-bench</i></b>. Rather than responding with “cannot be determined” when faced with ambiguous or insufficient information, models often rely on stereotypical associations to make definitive choices. For instance, Qwen2.5-VL <i>(bottom-left)</i> infers that a hijab-wearing woman is against terrorism, and GPT-4o <i>(top-right)</i> assumes a woman carrying a handbag is a secretary—both reflecting bias-driven reasoning rather than grounded inference. These examples highlight how current LMMs tend to amplify or reproduce social stereotypes when interpreting vague or context-light scenarios.
+          To evaluate stereotype bias beyond the limitations of multiple-choice QA, we adopt a reasoning-based, <b>LLM-as-a-judge</b> framework for open-ended multimodal responses. For each sample, the model generates a free-form rationale grounded in the image and context, plus a final answer. The judge model (GPT-4.1-mini) then scores the output on five independent 1&ndash;5 dimensions: <i>Fairness</i> (does the outcome avoid disadvantaging any group), <i>Stereotype</i> (does the reasoning rely on group-based generalizations), <i>Prior Bias</i> (use of unstated, non-group cultural assumptions), <i>Ambiguity Recognition</i> (awareness of missing evidence and willingness to refuse), and <i>Faithfulness</i> (perceptual grounding and absence of hallucination). The overall score is the harmonic mean across categories, where <b>higher scores indicate more fair (non-stereotypical) outputs</b>. A human verification study over 1,000 QA pairs confirms reliability, with 0.91 observed agreement and a 0.81 weighted Cohen's &kappa; against domain experts.
         </p>
-        </div> -->
+        </div>
 
-                <h3 class="title is-4 has-text-justified">Performance of Open- and Closed-Source LMMs on SB-Bench</h3>
+                <h3 class="title is-4 has-text-justified">Performance of Open-, Reasoning-, and Closed-Source LMMs on BBQ-V</h3>
 
         <div class="content has-text-centered">
                       <p style="text-align: justify;">
 
-        In the below main table, we present results for both open-source and closed-source models, on the SB-Bench. </p>
+        Below, we present category-wise fairness results for open-source, reasoning, and closed-source models on <b><i>BBQ-V</i></b>. </p>
 
-        <!-- <img src="./static/images/main_results.jpg"  style="max-width:100%"> -->
         <img src="./static/images/results.png"  style="max-width:100%">
-        <p style="text-align: justify;"> Evaluation of open-source and proprietary LMMs on demographic fairness metrics. Higher scores indicate more fair (non-stereotypical) outputs across demographic categories. </p>
+        <p style="text-align: justify;"> Evaluation of open-source, thinking-mode, and proprietary LMMs on demographic fairness metrics. Higher scores indicate more fair (non-stereotypical) outputs across demographic categories. The Average column reports the harmonic mean over all categories. </p>
 
 
     </div>
@@ -311,110 +293,51 @@
     </div>
  </div>
 
-            <!-- <h3 class="title is-4 has-text-justified">Main findings and Qualitative Results </h3>
+            <h3 class="title is-4 has-text-justified">Main findings </h3>
                 <div class="content has-text-justified">
             <p>
-            We benchmark 16 state-of-the-art open- and closed-source LMMs on <i>SB-Bench</i>, evaluating their performance across different model families and scales. Our analysis highlights performance gaps and biases, providing insights for fairer multimodal models. <i>SB-Bench</i> consists of over 14,500 Image Question pairs.
+            We benchmark 19 state-of-the-art LMMs on <i>BBQ-V</i> (16 general-purpose and three reasoning models), evaluating across model families and scales. Our analysis highlights persistent performance gaps and biases. <i>BBQ-V</i> consists of over 14,100 image-question pairs.
             </p>
-            
-            <p>
-                1) <b> Overall Results. </b> The overall results shows that closed-source models like GPT-4o (10.79% bias score) and Gemini-1.5-Flash exhibit significantly lower bias than open-source models, where the best, InternVL-2-8B, has a 62% bias score. GPT-4o demonstrates fairness across bias categories, with 23.99% bias in <i>Age</i> and 12.05% in <i>Disability</i>. Among open models, Qwen2-VL-7B-Instruct, Phi-3.5-Vision, and LLaVA-OneVision perform competitively, while Molmo-7B has the highest bias (90.92%). InternVL-2 excels in <i>Race/Ethnicity</i> (42% accuracy) but struggles in <i>Age</i> (81% bias score).
-            </p>
-            <p>
-                2) <b> Uncovering Implicit Biases in LMM's reasoning. </b> Our analysis of LMMs’ reasoning in <i>SB-Bench</i> reveals implicit biases in ambiguous contexts, where models often rely on stereotypes. For example, GPT-4o-mini exhibits bias in the <i>Religion</i> category by associating Buddhism with altruism in a charity-related question. The overall consistency between MCQ accuracy and open-ended explanations is 92.4%, highlighting a strong correlation but also exposing gaps in stereotype mitigation. The below Figure quantifies these biases, emphasizing the need for better fairness strategies in LMMs.
-            </p>
-            <div class="content has-text-centered">
-              <img src="./static/images/correlation.jpg" style="max-width:55%">
-            </div>
-            <p>
-                3) <b> Assessing bias in LMMs across modalities. </b> Our analysis reveals that adding visual input amplifies bias in LMMs compared to their base LLMs. InternVL2 shows a 22% higher overall bias than InternLM2, with increases of 36% in <i>Nationality</i>, 29% in <i>Religion</i>, and 26% in <i>Socio-Economic Status (SES)</i>. Phi-3's bias rises by 15.72%, while Qwen2 and LLaMA-3.2 exhibit smaller increases of 6.38% and 9.80%, respectively. These findings highlight the need for <i>SB-Bench</i> to evaluate and mitigate biases effectively in vision-language models. 
-            </p>
-            <div class="content has-text-centered">
-                <img src="./static/images/vllm_vs_base.jpg" style="max-width:55%">
-            </div>
-            <br>
 
             <p>
-                4) <b> Impact of model scale on stereotype biases. </b> Larger LMMs generally exhibit improved fairness. GPT-4o shows a 19.1% reduction in bias compared to GPT-4o-mini, while LLaVA-OneVision's bias drops by 10% when scaling from 7B to 72B. Qwen2-VL improves the most, reducing bias by 35.9% from 7B to 72B. InternVL-2 also shows a 35.1% fairness boost from 4B to 40B. Bias reduction varies by category— <i>Sexual Orientation</i> bias drops from 90% (2B) to 10% (40B), while <i>Age</i>, <i>Race/Ethnicity</i>, and <i>Religion</i> decrease more gradually.
+                1) <b> Overall Results. </b> Proprietary models lead, with Gemini-2.5-Flash-Lite (80.89%) and GPT-4o (75.38%) achieving the highest overall scores, particularly in challenging categories such as Nationality, Race/Ethnicity, and Sexual Orientation. The strongest open-source models are Phi-4-Multimodal-Instruct (74.30%), Phi-3.5-Vision-Instruct (72.59%), and Qwen2.5-Omni-7B (72.00%). In contrast, models such as LLaMA-3.2-Vision-11B (43.36%), Molmo-7B (45.03%), and LLaVA-OneVision-7B (53.19%) struggle across most categories. Even the best models show uneven performance, struggling most with <i>Physical Appearance</i>, <i>Age</i>, and <i>Disability</i>, while performing better on <i>Socio-Economic Status</i>, <i>Nationality</i>, and <i>Race/Ethnicity</i>.
             </p>
-            <div class="content has-text-centered">
-                <img src="./static/images/families_results.jpg" style="max-width:44%" align="center">
-                <img src="./static/images/scale_results_internvl.jpg" style="max-width:40%" align="center">
-            </div>
-
             <p>
-                5) <b> Stability of Benchmark. </b> <i>SB-Bench</i> demonstrates stability across evaluation conditions. To mitigate selection bias in multiple-choice VQAs, we randomized answer choices, resulting in a standard deviation of ±2.12% for Qwen2-VL-7B and ±0.50% for InternVL-2-8B. Similarly, for stitched-image evaluations in categories like <i>Nationality</i> and <i>Religion</i>, results remained consistent, with a deviation of ±0.27% for Qwen2-VL-7B and ±1.83% for InternVL-2-8B. These findings validate the benchmark’s robustness and reliability.
-            </p> -->
-            <!-- <br>
-
-                <div class="content has-text-centered">
-                        <table border="1" cellspacing="0" style="width: 400px; border-collapse: collapse; text-align: left; margin:  auto;">
-
-                <thead>
-                    <tr style="background-color:whitesmoke;">
-                        <th colspan="1" align="center" style="font-size: 13px;"></th>
-                        <th colspan="1" align="center" style="font-size: 13px;">Qwen2-VL</th>
-                        <th colspan="1" align="center" style="font-size: 13px;">InternVL2</th>
-                    </tr>
-                    <tr style="background-color:beige;">
-                        <td colspan="1" style="font-size: 12px;">Average Bias</td>
-                        <td colspan="1" align="center" style="font-size: 13px;">69.38%</td>
-                        <td colspan="1" align="center" style="font-size: 13px;">62.00%</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="background-color:whitesmoke;">
-                        <td colspan="1" style="font-size: 13px;">Option Shuffle</td>
-                        <td colspan="1" align="center" style="font-size: 13px;">±0.27%</td>
-                        <td colspan="1" align="center" style="font-size: 13px;">±1.83%</td>
-                    </tr>
-                    <tr style="background-color:beige;">
-                        <td colspan="1" style="font-size: 13px;">Image Shuffle</td>
-                        <td colspan="1" align="center" style="font-size: 13px;">±2.12%</td>
-                        <td colspan="1" align="center" style="font-size: 13px;">±0.50%</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <div class="content has-text-justified">
-                <p align="justify"> <b> <span>Table</span></b>: We evaluate the standard deviation for Qwen2-VL-7B and InternVL2-8B models on randomized multiple-choice orders and shuffled images in the paired image setting. Both models exhibit low variability and are consistent. </p>
-            </div>
-
-            <br>
-        </div> -->
-
-
-        <!-- <h3 class="title is-4 has-text-justified">Qualitative exampels from GPT-4o on our SB-Bench dataset</h3> 
-        
-        <p>
-            
-
-            <p align="justify"> 1) <b> Qualitative examples from categories: </b>  We present some qualitative examples of our various social bias categories.</p>
-            <div class="item item-sunflowers">
-                <img src="./static/images/More_Examples.jpg" style="max-width:100%" align="center">
-            </div>
-            <br>
-
+                2) <b> Thinking leads to more biased responses. </b> The reasoning-oriented models&mdash;GLM-4.1V-9B-Thinking (53.58%), SophiaVL-R1 (65.51%), and Qwen3-VL-8B-Thinking (69.47%)&mdash;lag behind similarly sized non-thinking LMMs. Qualitative inspection shows their multi-step reasoning chains do not translate into more robust behavior under ambiguity; instead, they construct narratives that link visual cues to latent attributes (e.g., economic status, family aspirations, submissiveness), thereby exposing and amplifying pre-existing social priors.
+            </p>
+            <p>
+                3) <b> Assessing bias across modalities. </b> A blind-vs-vision ablation shows that adding visual input amplifies bias relative to text-only base LLMs. In the blind setting, models lack the visual context and tend to safely refuse; once images are added, scores drop sharply: Gemma-3-12B 80.06% &rarr; 63.41%, LLaMA-3.2-11B-V 62.80% &rarr; 43.36%, Qwen2.5-VL-7B 81.19% &rarr; 65.53%, and Phi-4-MM-Instruct 89.44% &rarr; 74.30%. The drop is statistically significant across all families (p &lt; 0.001 for paired t-test and Wilcoxon).
+            </p>
+            <p>
+                4) <b> Impact of model scale on stereotype biases. </b> Larger LMMs generally exhibit improved fairness. Across InternVL-3 (8B vs. 78B), Qwen2.5-VL (7B vs. 72B), and GPT-4o (Mini vs. Full), the larger variant consistently scores higher. For example, GPT-4o improves over GPT-4o-mini on Disability Status (72.05% vs. 50.64%) and Socio-Economic Status (84.31% vs. 72.45%), and Qwen2.5-VL-72B outperforms its 7B counterpart on Race/Ethnicity (79.25% vs. 69.20%).
+            </p>
+            <p>
+                5) <b> Closed-ended (MCQ) evaluation. </b> A multiple-choice ablation following the BBQ format lifts many models into the 70&ndash;80% range, but the higher scores reflect inflated performance from forced selection between provided options. Models with moderate open-ended performance also show high MCQ scores, suggesting selection bias rather than genuine fairness, and confirming the value of open-ended evaluation.
+            </p>
+            <p>
+                6) <b> Comparison with synthetic images. </b> Synthetic images introduce substantial distribution shift. A synthetic-minus-real analysis reveals large, structured deviations&mdash;especially in <i>Race/Ethnicity</i> and <i>Socio-Economic Status</i> (e.g., differences of 19.9% and 13.6% for Gemma-3-12B and Qwen2.5-VL-7B). Synthetic generations often fail to capture the intended visual context, motivating our reliance on real images and treating synthetic experiments only as coarse trend checks.
+            </p>
 
         <h3 class="title is-4 has-text-justified">Conclusion</h3>
         <div class="content has-text-justified">
           <p>
-            In this paper, we introduce <i>SB-Bench</i>, a novel benchmark designed to evaluate stereotype biases in Large Multimodal Models (LMMs) through visually grounded contexts. \SBbench comprises over 7.5k non-synthetic multiple-choice questions across nine domains and 60 sub-domains. We conduct an empirical analysis on nine LMMs, including four language family-scaled variants (LLaVA-OneVision, InternVL2, Qwen2VL, and GPT-4o), uncovering significant performance disparities. Notably, the best open-source model, InternVL2-8B, lags behind the proprietary GPT-4o by 51.21% in fairness scores. Our findings reveal that LMMs exhibit the highest bias in categories such as Nationality, Age, and Appearance while performing relatively better on Race/Ethnicity and Gender Identity. Additionally, fairness improves with model scaling, yet bias remains more pronounced in LMMs compared to their corresponding LLM counterparts. This work underscores the limitations of state-of-the-art LMMs in mitigating social biases, highlighting key areas for future improvement. </p>
+            We introduce <i>BBQ-V</i>, a benchmark for evaluating stereotype biases in Large Multimodal Models through visually grounded contexts. <i>BBQ-V</i> contains over 14.1k non-synthetic, open-ended VQA pairs spanning nine domains and 50 sub-domains. We evaluate 19 LMMs, including three thinking models, and analyze three major model families (InternVL-3, Qwen2.5-VL, and GPT-4o) across multiple scales, revealing substantial performance disparities. We compare real versus synthetic images, showing that synthetic data introduces distributional shifts and fails to capture real-world visual complexity, and we demonstrate the advantages of open-ended evaluation over multiple-choice formats. Our findings show that LMMs struggle most with social categories such as Physical Appearance, Age, and Disability, while performing better on Socio-Economic Status, Nationality, and Race/Ethnicity, and that higher model scaling improves overall scores. This work highlights limitations in current LMMs and identifies key directions for reducing social bias in multimodal reasoning. </p>
 
             <br>
-            <p>For additional details about SB-Bench evaluation and experimental results, please refer to our main paper. Thank you! </p>
-        </div> -->
+            <p>For additional details about <i>BBQ-V</i> evaluation and experimental results, please refer to our main paper and supplementary material. Thank you! </p>
+        </div>
 
 </section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title"><a id="bibtex">BibTeX</a></h2>
-    <pre><code>@article{narnaware2025sb,
-      title={SB-Bench: Stereotype Bias Benchmark for Large Multimodal Models},
-      author={Narnaware, Vishal and Vayani, Ashmal and Gupta, Rohit and Sirnam, Swetha and Shah, Mubarak},
-      journal={arXiv preprint arXiv:2502.08779},
-      year={2025}
+    <pre><code>@inproceedings{anonymous2026bbqv,
+      title={BBQ-V: Benchmarking Visual Stereotype Bias in Large Multimodal Models},
+      author={Anonymous ECCV Submission},
+      booktitle={European Conference on Computer Vision (ECCV)},
+      note={Paper ID \#14914, under review},
+      year={2026}
     }
 </code></pre>
   </div>
@@ -463,9 +386,9 @@ const transientSelector = "#juxtapose-hidden";
       console.log(newNode.children[0]);
       oldNode.replaceChild(newNode.children[0], oldNode.children[0]);
       //newNode.removeChild(newNode.children[0]);
-      
+
   };
-  
+
   slider = new juxtapose.JXSlider(transientSelector, images, options);
 };
 
@@ -517,7 +440,7 @@ $(".flip-card").mouseleave(function() {
 </script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
